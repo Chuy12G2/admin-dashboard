@@ -2,8 +2,9 @@
     margin: 0;
     font-family: sans-serif;
 
-    --light-green:#f0fdfa;
-    --main-green : #0d9488;
+    --very-light-blue: #f0f9ff;
+    --light-gray: #f5f5f5;
+    --dark-blue : #0369a1;
 }
 
 .container{
@@ -16,7 +17,7 @@
 }
 
 .sidebar{
-    background-color: var(--main-green);
+    background-color: var(--dark-blue);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     color: #fff;
@@ -68,7 +69,7 @@ ion-icon{
 
 .search-bar input{
     width: 90%;
-    background-color: var(--light-green);
+    background-color: var(--very-light-blue);
 }
 
 .logo-header-top img{
@@ -90,7 +91,7 @@ ion-icon{
 }
 
 .header-bottom button{
-    background-color: var(--main-green);
+    background-color: var(--dark-blue);
     padding: .5rem 1rem;
     border-radius: 20px;
     border-color: #fff;
@@ -117,7 +118,58 @@ ion-icon{
 
 
 .main-content{
-    background-color: lightgreen;
+    background-color: var(--light-gray);
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
 
 }
+
+.projects-section{
+    padding: 1rem;
+    
+    grid-column: 1 / 2;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 25px;
+}
+
+.projects-heading{
+    grid-column: 1 / -1;
+}
+
+.project-card{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.project-card h3{
+    padding-bottom: 1rem;
+}
+
+.announments-trending-section{
+    
+}
+
+.announcement-heading{
+    padding: 1rem ;
+}
+
+.announcements{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.announcement-card{
+    height: 33%;
+    width: 100%;
+    background-color: #fff;
+    
+}
+
